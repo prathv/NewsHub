@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NewsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
@@ -25,3 +26,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# NewsHub
+
+An application that serves News Feed from all over the planet with the help of News API (https://newsapi.org).
+
+Technologies Used:
+
+# Frontend:
+  Angular
+
+# Backend:
+  Node
+
+# Database:
+  lowdb
+
+# Installation
+  To install all packages run "npm install"
+  
+# Boot the application
+  To run the application, just enter "npm run start"
+>>>>>>> 8ade4fc7ae9ef12bb87628203fce155448cf41cc

@@ -19,21 +19,18 @@ export class HomeScreenComponent implements OnInit {
 
   ngOnInit() {
     this.nav.show();
-    console.log(this.session.getAuthStatus());
     if(!this.session.getAuthStatus()){
       this.router.navigate(['login']);
     }
 
     this.dataservice.getSources().subscribe((resp)=>{
         var self = this;
-        console.log(resp);
         self.newsSources=resp.sources;
     })
   }
   select(data){
-    console.log(data);
+    if(this.selected.length < 5 && !this.selected.includes(data.source.id))
     this.selected.push(data.source.id);
-
   }
 
   viewSaved(){
@@ -42,12 +39,10 @@ export class HomeScreenComponent implements OnInit {
 
   display(){
     this.sources = this.selected.join();
-    console.log(this.sources);
     this.router.navigate(['detailed',this.sources]);
   }
 
   displayOne(data){
-    console.log(data);
     this.router.navigate(['detailed',data.source.id]);
   }
 }

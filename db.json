@@ -25,6 +25,11 @@
       "name": "Rai",
       "password": "1234",
       "email": "rai@gmail.com"
+    },
+    {
+      "name": "Prathveer",
+      "password": "1234",
+      "email": "pattytest@gmail.com"
     }
   ],
   "count": 0

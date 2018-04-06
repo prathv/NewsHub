@@ -41,6 +41,9 @@ NotShowNav:boolean = false;
    })
  }
 
+log(state){
+  console.log(state);
+}
  proceed(){
    this.router.navigate(['/home']);
  }

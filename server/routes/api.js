@@ -30,8 +30,7 @@ router.post("/register",(req,res)=>{
 router.post("/news/saveArticle",(req,res)=>{
   let user = {};
   user.email = req.body.user;
-  let source = [];
-  source.push(req.body.source);
+  let source = req.body.source;
   user.source = source;
   console.log(source);
   let write = db.get('user')

@@ -2,25 +2,21 @@
   "posts": [],
   "user": [
     {
-      "name": "asdas",
+      "name": "asdasd",
       "password": "1234",
       "email": "pattytest@gmail.com",
-      "source": [
-        [
-          {
-            "source": {
-              "id": "abc-news",
-              "name": "ABC News"
-            },
-            "author": "ABC News",
-            "title": "Driver may have intentionally crashed car into Miami police substation: Cops",
-            "description": "Police said the driver was identified as 36-year-old Giftson Cherenfant.",
-            "url": "http://abcnews.go.com/US/driver-intentionally-crashed-car-miami-police-substation-cops/story?id=54285452",
-            "urlToImage": "https://s.abcnews.com/images/US/miami-police-car-crash-ht-jt-180406_hpMain_16x9_992.jpg",
-            "publishedAt": "2018-04-06T00:00:00Z"
-          }
-        ]
-      ]
+      "source": {
+        "source": {
+          "id": "abc-news-au",
+          "name": "ABC News (AU)"
+        },
+        "author": "http://www.abc.net.au/news/vicky-xiuzhong-xu/9568026, http://www.abc.net.au/news/bang-xiao/9528622",
+        "title": "A 3,000-year-old tradition of wedding the dead is still thriving in rural China",
+        "description": "Li Long's mother found him a ghost bride so he could be buried in the family cemetery",
+        "url": "http://www.abc.net.au/news/2018-04-07/ghost-marriages-in-rural-china-continue-to-thrive/9608624",
+        "urlToImage": "http://www.abc.net.au/news/image/9608820-16x9-700x394.jpg",
+        "publishedAt": "2018-04-06T20:07:51Z"
+      }
     }
   ],
   "count": 0

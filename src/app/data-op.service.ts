@@ -29,7 +29,7 @@ export class DataOpService {
 
   saveArticle(data){
     let email= JSON.parse(localStorage.getItem("currentuser")).user.email;
-    return this.http.post(this.server+"news/saveArticle",{source:[data],user:email}).map((resp)=>resp.json());
+    return this.http.post(this.server+"news/saveArticle",{source:data,user:email}).map((resp)=>resp.json());
   }
 
 }

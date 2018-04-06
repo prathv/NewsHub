@@ -33,6 +33,7 @@ export class DetailedViewComponent implements OnInit {
   save(article){
     console.log(article.story);
       this.session.addSaved(article.story);
+      alert("Saved article to session");
   }
 
   viewSaved(){

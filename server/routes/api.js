@@ -56,7 +56,8 @@ router.post("/news/sources/details",(req,res)=>{
   let mSources = req.body.sources.source;
   newsapi.v2.topHeadlines({
   sources: mSources,
-  language:'en'
+  language:'en',
+  pagesize: 100
 }).then(response => {
   res.json(response);
 });
@@ -65,9 +66,6 @@ router.post("/news/sources/details",(req,res)=>{
 
 router.post("/test",(req,res)=>{
   console.log(req.body);
-  // db.get('posts')
-  // .push({ id: 1, title: 'lowdb is awesome'})
-  // .write()
   res.json({'status': 200})
 })
 

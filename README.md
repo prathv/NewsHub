@@ -13,3 +13,8 @@ Technologies Used:
 # Database:
   lowdb
 
+# Installation
+  To install all packages run "npm install"
+  
+# Boot the application
+  To run the application, just enter "npm run start"

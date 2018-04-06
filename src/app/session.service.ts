@@ -19,6 +19,8 @@ export class SessionService {
 
   setSession(user){
     let sessionInfo = {user:user,savedArticle:[]};
+    sessionInfo.savedArticle.push(user.source);
+    console.log(sessionInfo);
     localStorage.setItem('currentuser',JSON.stringify(sessionInfo));
   }
 

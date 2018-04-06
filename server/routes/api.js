@@ -17,12 +17,33 @@ router.get("/test",(req,res)=>{
 
 router.post("/register",(req,res)=>{
   let data = req.body.data;
-  db.get('user')
+  let user = db.get('user')
   .push(data)
   .write()
-  res.json({});
+  if(typeof(user) != 'undefined')
+  res.json({status:200});
+  else
+  res.json({status:401})
 })
 
+
+router.post("/news/saveArticle",(req,res)=>{
+  let user = {};
+  user.email = req.body.user;
+  let source = req.body.source;
+  user.source = source;
+  let write = db.get('user')
+  .find({email:user.email})
+  .assign({source:user.source})
+  .write()
+
+
+  if(typeof(user) != 'undefined')
+  res.json({status:200});
+  else
+  res.json({status:401});
+
+})
 router.post("/login",(req,res)=>{
   let status = 401;
   let data = req.body.data;
@@ -30,6 +51,7 @@ router.post("/login",(req,res)=>{
   .find({email:data.email})
   .value();
 
+  console.log(user);
   if(typeof(user) == 'undefined'){
     res.json({status:401});
 
@@ -37,7 +59,7 @@ router.post("/login",(req,res)=>{
 
   if(user.password === data.password){
     status = 200;
-    res.json({status:status,name:user.name,email:user.email});
+    res.json({status:status,name:user.name,email:user.email,source:user.source});
   }
   else{
     res.json({status:401});

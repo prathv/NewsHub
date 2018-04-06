@@ -2,34 +2,21 @@
   "posts": [],
   "user": [
     {
-      "name": "asd",
-      "password": "asd213",
-      "email": "asdsa@gmail.com"
-    },
-    {
-      "name": "asd2",
-      "password": "asd213",
-      "email": "asdsa@gmail.com"
-    },
-    {
-      "name": "das",
+      "name": "Raip",
       "password": "1234",
-      "email": "hey@gmail.com"
-    },
-    {
-      "name": "patty",
-      "password": "patty",
-      "email": "patty@gmail.com"
-    },
-    {
-      "name": "Rai",
-      "password": "1234",
-      "email": "rai@gmail.com"
-    },
-    {
-      "name": "Prathveer",
-      "password": "1234",
-      "email": "pattytest@gmail.com"
+      "email": "pattytest@gmail.com",
+      "source": {
+        "source": {
+          "id": "abc-news",
+          "name": "ABC News"
+        },
+        "author": "ABC News",
+        "title": "Lorde apologizes for 'poorly chosen' Whitney Houston bathtub Instagram post",
+        "description": "New Zealand singer Lorde apologized Thursday night for an Instagram post, which coupled a picture of a bath tub with a Whitney Houston song lyric.",
+        "url": "http://abcnews.go.com/GMA/Culture/lorde-apologizes-poorly-chosen-whitney-houston-bathtub-instagram/story?id=54282097",
+        "urlToImage": "https://s.abcnews.com/images/Entertainment/lorde-houston-split-gty-ps-180406_hpMain_16x9_992.jpg",
+        "publishedAt": "2018-04-06T00:00:00Z"
+      }
     }
   ],
   "count": 0

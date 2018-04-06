@@ -33,7 +33,13 @@ export class DetailedViewComponent implements OnInit {
   save(article){
     console.log(article.story);
       this.session.addSaved(article.story);
-      alert("Saved article to session");
+      this.dataservice.saveArticle(article.story).subscribe((resp)=>{
+        if(resp.status = "ok")
+        alert("Saved article to session");
+
+        else
+        alert("Error, Could not Save");
+      })
   }
 
   viewSaved(){

@@ -32,7 +32,8 @@ NotShowNav:boolean = false;
    this.dataservice.loginUser({email:this.email,password:this.password}).subscribe((resp)=>{
      console.log(resp);
      if(resp.status == 200){
-       this.session.setSession({name:resp.name,email:resp.email});
+       console.log(resp);
+       this.session.setSession({name:resp.name,email:resp.email,source:resp.source});
        this.proceed();
     }
     else{
@@ -41,9 +42,7 @@ NotShowNav:boolean = false;
    })
  }
 
-log(state){
-  console.log(state);
-}
+
  proceed(){
    this.router.navigate(['/home']);
  }

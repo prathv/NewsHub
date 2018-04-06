@@ -4,12 +4,12 @@ An application that serves News Feed from all over the planet with the help of N
 
 Technologies Used:
 
-#Frontend:
-Angular
+# Frontend:
+  Angular
 
-#Backend:
-Node
+# Backend:
+  Node
 
-#Database:
-lowdb
+# Database:
+  lowdb
 

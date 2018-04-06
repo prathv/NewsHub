@@ -17,6 +17,7 @@ export class DetailsavedComponent implements OnInit {
       this.router.navigate(['login']);
     }
     this.savedHeadlines = this.session.returnSaved();
+    console.log(this.savedHeadlines);
   }
 
 }

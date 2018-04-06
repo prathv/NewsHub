@@ -19,6 +19,7 @@ export class SessionService {
 
   setSession(user){
     let sessionInfo = {user:user,savedArticle:[]};
+    if(typeof(user.source) != 'undefined')
     sessionInfo.savedArticle.push(user.source);
     console.log(sessionInfo);
     localStorage.setItem('currentuser',JSON.stringify(sessionInfo));
@@ -26,10 +27,8 @@ export class SessionService {
 
   addSaved(article){
     let currentSession = JSON.parse(localStorage.getItem("currentuser"));
-    console.log(currentSession);
     currentSession.savedArticle.push(article);
     localStorage.setItem('currentuser',JSON.stringify(currentSession));
-    console.log(localStorage.getItem("currentuser"));
   }
 
   returnSaved():any{

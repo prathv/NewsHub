@@ -30,12 +30,21 @@ router.post("/register",(req,res)=>{
 router.post("/news/saveArticle",(req,res)=>{
   let user = {};
   user.email = req.body.user;
-  let source = req.body.source;
+  let source = [];
+  source.push(req.body.source);
   user.source = source;
+  console.log(source);
   let write = db.get('user')
   .find({email:user.email})
-  .assign({source:user.source})
+  .assign({source:source})
   .write()
+
+  let totalsource = [];
+  // write.source.forEach((source)=>{
+  //   totalsource.push(source);
+  // })
+
+  console.log(write);
 
 
   if(typeof(user) != 'undefined')
@@ -51,7 +60,6 @@ router.post("/login",(req,res)=>{
   .find({email:data.email})
   .value();
 
-  console.log(user);
   if(typeof(user) == 'undefined'){
     res.json({status:401});
 

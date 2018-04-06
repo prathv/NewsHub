@@ -36,7 +36,6 @@ export class DetailedViewComponent implements OnInit {
       this.dataservice.saveArticle(article.story).subscribe((resp)=>{
         if(resp.status = "ok")
         alert("Saved article to session");
-
         else
         alert("Error, Could not Save");
       })

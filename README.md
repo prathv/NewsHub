@@ -14,7 +14,8 @@ Technologies Used:
   lowdb
 
 # Installation
-  To install all packages run "npm install"
+  To install all packages run cd into newsApp and run "npm install"
   
 # Boot the application
-  To run the application, just enter "npm run start"
+  To run the application, just enter "npm run start" and the client localhost server will run on port 4200
+  

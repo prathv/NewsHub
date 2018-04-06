@@ -1,10 +1,3 @@
-# NewsApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-
-## Development server
-
-
 # NewsHub
 
 An application that serves News Feed from all over the planet with the help of News API (https://newsapi.org).

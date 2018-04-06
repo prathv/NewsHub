@@ -1,0 +1,31 @@
+
+<div class="jumbotron" style="text-align:center">
+  <div class="container">
+    <h1 class="display-3">News Hub</h1>
+    <p class="lead">Select Top Headlines from various sources or from your favourite broadcaster.</p>
+    <button class="btn-sm btn-success" (click)="viewSaved()">View Saved Articles</button>
+  </div>
+</div>
+
+<div class = "row">
+<div class="col-md-2">
+  <div class="container" >
+      <p> 5 Sources are:</p>
+      <li class="list-group-item" *ngFor="let source of selected" >{{source}}</li>
+      <button class="btn-primary" style="margin-top:5px" (click)="display()">Show All TopHeadlines</button>
+  </div>
+</div>
+<div class="col-md-10">
+<div class="row">
+  <div class="col-md-3" style="margin-bottom:3px" *ngFor="let source of newsSources">
+    <div class="card">
+      <div class="card-body text-white bg-dark mb-3">
+        <p>{{source.name}}<p>
+        <button class="btn-sm btn-primary" style="float: right" (click)="select({source:source})">Select</button>
+        <button class="btn-sm btn-success" style="float: right" (click)="displayOne({source:source})">Show Top Headlines</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

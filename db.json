@@ -1,0 +1,31 @@
+{
+  "posts": [],
+  "user": [
+    {
+      "name": "asd",
+      "password": "asd213",
+      "email": "asdsa@gmail.com"
+    },
+    {
+      "name": "asd2",
+      "password": "asd213",
+      "email": "asdsa@gmail.com"
+    },
+    {
+      "name": "das",
+      "password": "1234",
+      "email": "hey@gmail.com"
+    },
+    {
+      "name": "patty",
+      "password": "patty",
+      "email": "patty@gmail.com"
+    },
+    {
+      "name": "Rai",
+      "password": "1234",
+      "email": "rai@gmail.com"
+    }
+  ],
+  "count": 0
+}

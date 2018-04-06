@@ -1,0 +1,24 @@
+<div class="jumbotron" style="text-align:center">
+  <div class="container">
+    <h1 class="display-3">Saved Headlines</h1>
+    <p class="lead">Here are the Saved Headlines</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3" style="margin-bottom:3px" *ngFor="let story of savedHeadlines">
+    <div class="card h-100">
+      <div class="card-body text-white bg-dark mb-3">
+
+      <img class="card-img-top" src={{story.urlToImage}} alt="Card image cap">
+      <h5 class="card-title">{{story.title}}</h5>
+        <p>{{story.source.name}}</p>
+        <p>{{story.description}}</p>
+      </div>
+      <button class="btn btn-success" (click)="save({story:story})">Save</button>
+      <div class="card-footer text-muted">
+        <strong>Published Date/Time: {{story.publishedAt}}</strong>
+      </div>
+    </div>
+  </div>
+</div>
